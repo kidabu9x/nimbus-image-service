@@ -1,0 +1,8 @@
+version: '3'
+services:
+  image-service:
+    hostname: image-service.local
+    container_name: image-service
+    ports:
+      - 48083:8080
+    build: .
