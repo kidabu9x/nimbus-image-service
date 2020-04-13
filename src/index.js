@@ -14,7 +14,7 @@ app.use(cors());
 app.use(helmet());
 app.use(compression());
 
-app.use("/v1/images", UploadController)
+app.use("/v1", UploadController)
 
 const port = 8080;
 app.listen(port, () => {

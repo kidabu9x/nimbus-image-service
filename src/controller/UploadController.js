@@ -6,7 +6,7 @@ const router = Router({
   mergeParams: true
 });
 
-router.post("/", multer.single("file"), async (request, res) => {
+router.post("/upload", multer.single("file"), async (request, res) => {
     try {
         if (!request.file) {
             throw new Error("Missing file");
