@@ -16,7 +16,7 @@ app.use(compression());
 
 app.use("/v1", UploadController)
 
-const port = 8080;
+const port = 48083;
 app.listen(port, () => {
   console.log(`App started at: localhost:${port}`);
 });
